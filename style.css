@@ -1,0 +1,165 @@
+body {
+  margin: 0 0 0 0;
+  overflow: hidden;
+  background: url(landscape.png) center center no-repeat fixed;
+  user-select: none;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.gallery-container {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.upper-container {
+  width: 100vw;
+  height: 65vh;
+}
+
+.upper-component {
+  float: left;
+  height: 65vh;
+}
+
+.close {
+  top: 2vh;
+  right: 3vw;
+  color: rgb(99, 95, 95);
+  cursor: pointer;
+  position: fixed;
+  font-size: 48px;
+  transition: 0.5s;
+}
+
+.close:hover {
+  font-size: 56px;
+}
+
+.previous-container {
+  width: 10vw;
+  display: table;
+}
+
+.previous-button {
+  color: rgb(99, 95, 95);
+  cursor: pointer;
+  display: table-cell;
+  font-size: 48px;
+  transition: 0.5s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.previous-button:hover {
+  font-size: 64px;
+}
+
+.slides-container {
+  width: 80vw;
+  display: table;
+}
+
+.slide-component {
+  width: 80vw;
+  height: 65vh;
+  display: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.slide-component img {
+  max-width: 80vw;
+  max-height: 60vh;
+  margin-top: 2vh;
+  object-fit: scale-down;
+}
+
+.next-container {
+  width: 10vw;
+  display: table;
+}
+
+.next-button {
+  color: rgb(99, 95, 95);
+  cursor: pointer;
+  display: table-cell;
+  font-size: 48px;
+  transition: 0.5s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.next-button:hover {
+  font-size: 64px;
+}
+
+.clearing-component {
+  clear: both;
+  height: 0vh;
+}
+
+.lower-container {
+  width: 100vw;
+  height: 35vh;
+}
+
+.caption-container {
+  color: white;
+  width: 100vw;
+  height: 15vh;
+  border: 0.1vh solid rgba(55, 55, 55);
+  font-size: 2.75vh;
+  line-height: 10vh;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: rgba(30, 30, 30, 0.75);
+}
+
+.thumbnails-container {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.thumbnail-component {
+  float: left;
+  width: 15vw;
+  margin-left: 0.3vw;
+}
+
+.thumbnail {
+  width: 15vw;
+  height: 20vw;
+  cursor: pointer;
+  opacity: 0.5;
+  max-height: 18vh;
+  object-fit: cover;
+}
+
+.active, .thumbnail:hover {
+  opacity: 1;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Fading Slideshow Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="upper-container">
+            <a class="close" onclick="closeGallery()">&#10006;</a>
+
+            <div class="upper-component previous-container">
+                <a class="previous-button" onclick="updateSlide(-1)">&#10094;</a>
+            </div>
+
+            <div class="upper-component slides-container">
+                <div class="slide-component fade">
+                    <div class="image-container">
+                        <img src="img/cute-cat.gif">
+                    </div>
+                </div>
+
+                <div class="slide-component fade">
+                    <div class="image-container">
+                        <img src="img/cute-raccoon.jpeg">
+                    </div>
+                </div>
+
+                <div class="slide-component fade">
+                    <div class="image-container">
+                        <img src="img/cute-dog.jpeg">
+                    </div>
+                </div>
+
+                <div class="slide-component fade">
+                    <div class="image-container">
+                        <img src="img/crazy-dog.jpg">
+                    </div>
+                </div>
+
+                <div class="slide-component fade">
+                    <div class="image-container">
+                        <img src="img/cute-squirrel.jpg">
+                    </div>
+                </div>
+
+                <div class="slide-component fade">
+                    <div class="image-container">
+                        <img src="img/beautiful-fox.jpg">
+                    </div>
+                </div>
+
+                <div class="slide-component fade">
+                    <div class="image-container">
+                        <img src="img/beautiful-wolf.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="upper-component next-container">
+                <a class="next-button" onclick="updateSlide(1)">&#10095;</a>
+            </div>
+
+            <div class="clearing-component"></div>
+        </div>
+
+        <div class="lower-container">
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="thumbnails-container">
+                <div class="thumbnail-component">
+                    <img class="thumbnail" src="img/cute-cat.gif" onclick="goToSlide(1)" alt='Cute cat feeling guilty'>
+                </div>
+                <div class="thumbnail-component">
+                    <img class="thumbnail" src="img/cute-raccoon.jpeg" onclick="goToSlide(2)" alt="Cute raccoon afraid of something">
+                </div>
+                <div class="thumbnail-component">
+                    <img class="thumbnail" src="img/cute-dog.jpeg" alt="Cute dog asking for food" onclick="goToSlide(3)">
+                </div>
+                <div class="thumbnail-component">
+                    <img class="thumbnail" src="img/crazy-dog.jpg" alt="Crazy dog trying to catch treats" onclick="goToSlide(4)">
+                </div>
+                <div class="thumbnail-component">
+                    <img class="thumbnail" src="img/cute-squirrel.jpg" alt="Cute squirrel eating" onclick="goToSlide(5)">
+                </div>
+                <div class="thumbnail-component">
+                    <img class="thumbnail" src="img/beautiful-fox.jpg" alt="Beautiful fox looking to you" onclick="goToSlide(6)">
+                </div>
+                <div class="thumbnail-component">
+                    <img class="thumbnail" src="img/beautiful-wolf.jpg" alt="Beautiful wolf playing with flowers" onclick="goToSlide(7)">
+                </div>
+                <div class="clearing-component"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
